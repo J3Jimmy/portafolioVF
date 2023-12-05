@@ -21,7 +21,7 @@
 
 .section__h2,
 .section__h3 {
-  margin-top: 5vh;
+  margin-top: 10vh;
   font-size: 2rem;
   margin-bottom: 1em;
   font-weight: bold;
@@ -58,7 +58,14 @@
   align-items: center;
   gap: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s;
+  border: 2px solid transparent; /* Agrega un borde al botón */
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, border-color 0.3s ease-out; /* Añade la transición para el borde */
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(136, 169, 245);
+    border-color: rgb(89, 42, 206); /* Cambia el color del borde al hacer hover */
+  }
 }
 
 .section li strong {

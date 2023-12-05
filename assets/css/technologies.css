@@ -21,6 +21,13 @@
   transform-origin: 50% 50%;
   top: 0;
   left: 0;
+  border: 3px solid transparent; /* Agrega un borde al botón */
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, border-color 0.3s ease-out; /* Añade la transición para el borde */
+
+  &:hover {
+    cursor: pointer;
+    border-color: rgb(89, 42, 206); /* Cambia el color del borde al hacer hover */
+  }
 
   /* la cara posterior del elemento no será visible */
   display: flex;

@@ -89,14 +89,17 @@
   justify-content: center;
   align-items: center;
   column-gap: 0.8rem;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  border: 2px solid transparent; /* Agrega un borde al botón */
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, border-color 0.3s ease-out; /* Añade la transición para el borde */
 
   &:hover {
     cursor: pointer;
     background-color: rgb(76, 129, 245);
-    color: rgb(89, 42, 206);
+    color: rgb(61, 15, 179);
+    border-color: rgb(89, 42, 206); /* Cambia el color del borde al hacer hover */
   }
 }
+
 
 .morph {
   content: '';
