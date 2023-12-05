@@ -19,7 +19,7 @@
 
 .body--ligth {
   --bg: #f0f0f0;
-  --bg-secondary: white;
+  --bg-secondary: rgb(201, 190, 230);
   --text: #222;
 
   --morph1: rgb(231, 201, 164);
